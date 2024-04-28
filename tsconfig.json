@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+      "outDir": "build/dist",
+      "target": "es2017",
+      "baseUrl": "src",
+      "lib": ["es6", "dom", "dom.iterable", "esnext"],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "noFallthroughCasesInSwitch": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "react-jsx",
+      "rootDir": "src",
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "paths": {
+        "@/*": ["./src/*"],
+        "@components/*": ["./src/components/*"],
+        "@constants/*": ["./src/constants/*"],
+        "@types/*": ["./src/types/*"],
+        "@api/*": ["./src/api/*"],
+        "@assets/*": ["./src/assets/*"],
+        "@utils/*": ["./src/utils/*"]
+      }
+    },
+    "exclude": ["node_modules", "build", "scripts", "acceptance-tests", "webpack", "jest"],
+    "typeRoots": ["node_modules/@types", "src/@types"],
+    "types": ["typePatches", "vite/client", "vite-plugin-svgr/client", "vitest/globals"],
+    "include": ["src", "custom.d.ts"]
+  }
+  
