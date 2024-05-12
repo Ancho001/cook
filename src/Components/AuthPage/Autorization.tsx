@@ -1,4 +1,3 @@
-import React from 'react';
 // import { block } from '../../utils/bem';
 import block from '../../bem';
 import './style.scss';
